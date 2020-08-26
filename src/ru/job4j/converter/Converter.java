@@ -22,19 +22,38 @@ public class Converter {
         return rsl;
     }
 
-
     public static void main(String[] args) {
-        int euro = Converter.rubleToEuro(100);
-        System.out.println("100 rubles are " + euro + " euro. ");
+        int in = 110;
+        int expected = 1;
+        int out = rubleToEuro(in);
+        boolean passed = expected == out;
+        int euro = Converter.rubleToEuro(110);
+        System.out.println("110 rubles are " + euro + " euro. ");
+        System.out.println("Test result : " + passed);
 
-        int dollar = Converter.rubleToDollar(100);
-        System.out.println("100 rubles are " + dollar + " dollar. ");
+        int in2 = 120;
+        int expected2 = 2;
+        int out2 = rubleToDollar(in);
+        boolean passed2 = expected == out;
+        int dollar = Converter.rubleToDollar(120);
+        System.out.println("120 rubles are " + dollar + " dollar. ");
+        System.out.println("Test result : " + passed);
 
-        int ruble = Converter.euroToRuble(100);
-        System.out.println("100 euro are " + ruble + " ruble. ");
+        int in3 = 130;
+        int expected3 = 9100;
+        int out3 = euroToRuble(in);
+        boolean passed3 = expected3 == out3;
+        int ruble = Converter.euroToRuble(130);
+        System.out.println("130 euro are " + ruble + " ruble. ");
+        System.out.println("Test result : " + passed);
 
-        int ruble1 = Converter.dollarToRuble(100);
-        System.out.println("100 dollars are " + ruble1 + " ruble. ");
+        int in4 = 140;
+        int expected4 = 8400;
+        int out4 = dollarToRuble(in);
+        boolean passed4 = expected4 == out4;
+        int ruble1 = Converter.dollarToRuble(140);
+        System.out.println("140 dollars are " + ruble1 + " ruble. ");
+        System.out.println("Test result : " + passed);
 
     }
 }

@@ -34,7 +34,7 @@ public class Converter {
         int in2 = 120;
         int expected2 = 2;
         int out2 = rubleToDollar(in);
-        boolean passed2 = expected == out;
+        boolean passed2 = expected == out2;
         int dollar = Converter.rubleToDollar(120);
         System.out.println("120 rubles are " + dollar + " dollar. ");
         System.out.println("Test result : " + passed);

@@ -8,7 +8,7 @@ public class Cinema {
         } else {
             System.out.println("No way young pervert");
         }
-    }
+    } 
 
 
     public static void main(String[] args) {
